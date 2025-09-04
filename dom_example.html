@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id ="heading">This is plain HTML output</h2>
+    <button onclick="chnageText()">Click Me</button>
+
+     <h2 id ="heading">This paragraph</h2>
+    <button onclick="chnageColor()">Click Me</button>
+
+    <script>
+        function chnageText(){
+            document.getElementById("heading").innerHTML = "welcome to Dom in Javascript";
+        }
+
+        function chnageColor(){
+            document.getElementById("para").style.color = "red";
+            document.getElementById("para").style.fontSize = "30px";
+        }
+    </script>
+</body>
+</html>
